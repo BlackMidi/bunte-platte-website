@@ -25,8 +25,6 @@ export const ApplicationLayout = ({
   sideContent,
   sideContentPosition = 'right'
 }: ApplicationLayoutProps) => {
-
-  console.log('ApplicationLayout-Variante:', variant);
   
   const { theme } = useTheme();
 

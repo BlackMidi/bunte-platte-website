@@ -9,9 +9,11 @@ type SectionProps = {
   title: string;
   /** The content to be displayed in the right column. Can be any valid React node. */
   children: React.ReactNode;
+  /** Optional ID for the section, used for on-page anchor links. */
+  id?: string;
 };
 
-export const Section = ({ title, children }: SectionProps) => {
+export const Section = ({ title, children, id }: SectionProps) => {
   const { theme } = useTheme();
 
   // Apply typography and color from the theme for the title
@@ -21,7 +23,7 @@ export const Section = ({ title, children }: SectionProps) => {
   };
 
   return (
-    <section className={styles.sectionContainer}>
+    <section id={id} className={styles.sectionContainer}>
       <div className={styles.titleColumn}>
         <h2 style={titleStyle}>{title}</h2>
       </div>

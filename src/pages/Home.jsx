@@ -17,7 +17,7 @@ function Home() {
     return (
           <ApplicationLayout variant="oneColumn">
 
-             <Section title="Who we are">
+             <Section id="about" title="Who we are">
                 <p style={{fontSize: '20px', color: '#1F2A37', lineHeight: '28px', textAlign: 'left'}}>
                 Bunte Platte e.V. is a ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                 </p>
@@ -40,7 +40,7 @@ function Home() {
                 </Accordion>
             </Section>
 
-            <Section title="Our Projects">
+            <Section id="projects" title="Our Projects">
                 <ProjectCardGroup>
                     <ProjectCard 
                         title="Project Name"
@@ -63,7 +63,7 @@ function Home() {
                 </ProjectCardGroup>
             </Section>
 
-            <Section title="Join us">
+            <Section id="join" title="Join us">
                 <p style={{fontSize: '20px', color: '#1F2A37', lineHeight: '28px', textAlign: 'left'}}>
                 Join Bunte Platte e.V. for magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
                 </p>
@@ -81,7 +81,7 @@ function Home() {
                 <LinkButton href="https://kleinundhaarig.de/pdf/230109_Aufnahmeantrag_Foerdermitgliedschaft_BuntePlatte.pdf" label="Join Bunte Platte e.V." iconSrc='/arrow_right.svg'/>
             </Section>
 
-            <Section title="Archive">
+            <Section id="archive" title="Archive">
                 <LinkButton href="https://soundcloud.com/kleinundhaarig" label="Check out our Soundcloud" iconSrc='/arrow_right.svg'/>
                 <p style={{fontSize: '20px', color: '#1F2A37', lineHeight: '28px', textAlign: 'left'}}>
                 Or some images from past projects ↓
