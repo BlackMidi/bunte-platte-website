@@ -1,0 +1,51 @@
+.imageGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    padding: 32px;
+    box-sizing: border-box; /* adds the padding to the 100% width */
+  }
+  
+  /* A single row of images */
+  .imageRow {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+  }
+  
+  /* The actual image element */
+  .image {
+    width: 100%;
+    aspect-ratio: 16 / 9; /* Creates a consistent widescreen aspect ratio */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Styles specific to the 'double' variant row */
+  .double .image {
+    width: 50%;
+    aspect-ratio: 8 / 9;
+  }
+  
+  /* Responsive styles for mobile devices */
+  @media (max-width: 768px) {
+    /* Stack the images in a double row on top of each other */
+    .double {
+      flex-direction: column;
+    }
+  
+    .double .image {
+      width: 100%;
+    }
+
+    .imageGroup {
+      padding: 24px;
+      box-sizing: border-box; /* adds the padding to the 100% width */
+      gap: 12px;
+    }
+
+    .imageRow {
+      gap: 12px;
+    }
+  }

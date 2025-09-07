@@ -1,0 +1,53 @@
+/* Main container for a list of accordion items */
+.accordionContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  /* Styling for a single accordion item */
+  .accordionItem {
+    width: 100%;
+    padding: 16px 0;
+  }
+  
+  /* Clickable header of the item */
+  .itemHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .itemTitle {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+    transition: text-decoration 0.2s ease;
+  }
+  
+  /* Underline the title on hover */
+  .itemHeader:hover .itemTitle {
+    text-decoration: underline;
+  }
+  
+  /* Container for the collapsible content */
+  .itemContent {
+    /* Smooth transition using max-height */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+  }
+  
+  /* Style for when the content is open */
+  .itemContentOpen {
+    max-height: 1000px; /* A large enough value to show all content */
+  }
+  
+  /* Inner padding for the content to prevent text from touching the edges during animation */
+  .contentInner {
+    padding-top: 12px;
+    line-height: 1.5;
+  }
+  

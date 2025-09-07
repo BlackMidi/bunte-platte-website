@@ -1,0 +1,33 @@
+
+.sectionContainer {
+    display: grid;
+    /* 30% for the title, the rest for the content */
+    grid-template-columns: 30% 1fr; 
+    gap: 16px;
+    width: auto;
+    padding: 48px 32px; /* Vertical padding to separate sections */
+  }
+  
+  /* The left column containing the title */
+  .titleColumn {
+    text-align: left;
+  }
+  
+  /* The right column containing the flexible content */
+  .contentColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Spacing between items passed as children */
+    min-width: 0;
+  }
+  
+  /* Responsive styles for mobile devices */
+  @media (max-width: 768px) {
+    .sectionContainer {
+      /* Stacks columns on top of each other if activated */
+      /* grid-template-columns: 1fr; */
+      gap: 16px;
+      padding: 48px 24px;
+    }
+  } 
+  

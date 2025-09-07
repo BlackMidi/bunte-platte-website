@@ -1,0 +1,41 @@
+.navbarLink {
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+  }
+  
+  .darkText, .invertedText {
+    display: block;
+    transition: all 0.2s ease;
+  }
+  
+  .darkText {
+    color: #000000;
+
+  }
+
+  .invertedText {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #ffffff;
+    pointer-events: none; /* Allows clicks to go through to the actual link below */
+  }
+  
+  /* Hover effect: underlines both layers simultaneously */
+  .navbarLink:hover .darkText,
+  .navbarLink:hover .invertedText {
+    text-decoration: underline;
+  }
+  

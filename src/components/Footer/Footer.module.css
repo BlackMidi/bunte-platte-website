@@ -1,0 +1,49 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 32px 32px;
+  gap: 24px;
+  width: 100%;
+  box-sizing: border-box; /* adds the padding to the 100% width */ 
+  height: auto;
+  position: relative;
+  border-radius: 0px;
+}
+
+.leftContent, .rightContent {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: auto;
+  gap: 16px;
+}
+
+.organizationText {
+  padding: none;
+  text-align: left;
+}
+
+.copyrightText {
+  text-align: right;
+  white-space: nowrap;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .footer {
+    height: auto;
+    padding: 24px;
+  }
+  
+  .leftContent, .rightContent {
+    width: auto;
+    justify-content: left;
+  }
+  
+  .rightContent {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+} 

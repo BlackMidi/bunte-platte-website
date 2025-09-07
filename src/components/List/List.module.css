@@ -1,0 +1,34 @@
+.listContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none; /* Removes default bullet points */
+  }
+  
+  /* list item (li) */
+  .listItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+  }
+  
+  /* Leading icon in a list item */
+  .itemIcon {
+    width: 24px;
+    height: 24px;
+    /* Prevents icons from shrinking if text is long */
+    flex-shrink: 0; 
+  }
+  
+  .itemDescription {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+  }
+  

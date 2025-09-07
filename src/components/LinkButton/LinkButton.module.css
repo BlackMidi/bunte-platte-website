@@ -1,0 +1,46 @@
+.linkButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+  gap: 4px;
+  position: relative;
+  width: auto;
+  border-radius: 0px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.linkButton:hover .linkButtonLabel {
+  text-decoration: underline;
+}
+
+.linkButtonLabel {
+  width: auto;
+  text-align: left;
+  flex: none;
+  flex-grow: 0;
+  flex-shrink: 1;
+  min-width: 0;
+  order: 0;
+}
+
+.linkButtonIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  flex: none;
+  flex-shrink: 0; /* Icon should not shrink */
+  order: 1;
+}
+
+.linkButtonIcon > * {
+  width: 100%;
+  height: 100%;
+}
+
