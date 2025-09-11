@@ -62,13 +62,17 @@ export const LinkButton = ({
 
   // If an 'href' is provided, render a standard <a> tag for external links
   if (href) {
+    // we check if the link is a weblink (or a mail adress via mailto: for example)
+    const isWebLink = href.startsWith('http');
+
     return (
       <a
         href={href}
         className={classNames}
         style={linkButtonStyle}
-        target="_blank" // Open external links in a new tab
-        rel="noopener noreferrer"
+        // We only add target and rel if its a weblink -> always opens in new tab
+        target={isWebLink ? '_blank' : undefined}
+        rel={isWebLink ? 'noopener noreferrer' : undefined}
         {...rest}
       >
         {content}

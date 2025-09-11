@@ -8,7 +8,7 @@ function Imprint() {
     return (
           <ApplicationLayout variant="oneColumn">
 
-             <Section id="imprint" title="Imprint">
+             <Section id="imprint" title="Impressum">
                 <p style={{fontSize: '20px', color: '#1F2A37', lineHeight: '28px', textAlign: 'left'}}>
                 KONTAKT <br></br>
                 Bunte Platte e.V. <br></br>

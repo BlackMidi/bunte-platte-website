@@ -26,9 +26,9 @@ export const Footer = () => {
         </div>
       </div>
       <div className={styles.rightContent}>
-        <LinkButton to="/imprint" label="Imprint"/>
-        <LinkButton to="/privacy" label="Privacy" />
-        <LinkButton to="/terms" label="Terms" />
+        <LinkButton to="/imprint" label="Impressum"/>
+        <LinkButton to="/privacy" label="Datenschutz" />
+        {/* <LinkButton to="/terms" label="Terms" /> */}
       </div>
     </footer>
   );

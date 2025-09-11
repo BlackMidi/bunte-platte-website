@@ -16,8 +16,10 @@
   transition: transform 0.2s ease-in-out;
 }
 
-.projectCard:hover {
+/* Hover effects only apply to cards with the .isLink class */
+.projectCard.isLink:hover {
   transform: translateY(-4px);
+  cursor: pointer;
 }
 
 .cardImage {
@@ -43,7 +45,8 @@
   height: 24px;
 }
 
-.projectCard:hover .cardTitle {
+/* Underline effect only applies to cards with a link via projectURL */
+.projectCard.isLink:hover .cardTitle {
   text-decoration: underline;
 }
 
@@ -55,3 +58,4 @@
     width: 100%;
   }
 }
+

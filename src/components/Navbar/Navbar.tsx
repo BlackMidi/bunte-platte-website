@@ -2,10 +2,10 @@ import { NavbarLink } from '../NavbarLink/NavbarLink';
 import styles from './Navbar.module.css';
 
 const navItems = [
-  { label: 'About', href: '#about' },
-  { label: 'Projects', href: '#projects' },
-  { label: 'Join us', href: '#join' },
-  { label: 'Archive', href: '#archive' },
+  { label: 'Über', href: '#about' },
+  { label: 'Projekte', href: '#projects' },
+  { label: 'Beitritt', href: '#join' },
+  { label: 'Archiv', href: '#archive' },
 ];
 
 export const Navbar = () => {
@@ -13,13 +13,15 @@ export const Navbar = () => {
     <nav className={styles.navbar}>
       <div className={styles.contentLeft}>
         <div className={styles.navigation}>
-          {/* This link scrolls to the top of the page */}
-          <NavbarLink to="/home" label="Bunte Platte e.V."/>
+          <div className={styles.logo} style={{ paddingTop: "0px" }}>
+            <img src="/bunte_platte_logo.svg" alt="Bunte Platte e.V. Logo" width="32" height="38"/>
+          </div>
+          <NavbarLink to="/" label="Bunte Platte e.V."/>
         </div>
       </div>
       <div className={styles.contentRight}>
         <div className={styles.navigation}>
-         {/* 2. Map over the array to create the links */}
+         {/* Maps over the above array to create all links */}
          {navItems.map(item => (
            <NavbarLink key={item.label} to={item.href} label={item.label} />
          ))}

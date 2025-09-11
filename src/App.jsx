@@ -13,6 +13,7 @@ import Shop from './pages/Shop'
 import ComponentTest from './pages/ComponentTests.jsx'
 import Imprint from './pages/imprint.jsx'
 import Terms from './pages/terms.jsx'
+import Privacy from './pages/privacy.jsx'
 import ProductPage from './pages/ProductPage'
 
 // This assigns the routes for all pages, also the Navbar and Footer are globally set here
@@ -30,6 +31,7 @@ function App() {
           <Route path="/componentTest" element={<ComponentTest />} />
           <Route path="/imprint" element={<Imprint />} />
           <Route path="/terms" element={<Terms />} />
+          <Route path="/privacy" element={<Privacy />} />
         </Routes>
       </main>
       <Footer />

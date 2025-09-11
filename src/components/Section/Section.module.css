@@ -29,5 +29,14 @@
       gap: 16px;
       padding: 48px 24px;
     }
+  }
+
+  @media (max-width: 420px) {
+    .sectionContainer {
+      /* Stacks columns on top of each other if activated */
+      /* grid-template-columns: 1fr; */
+      gap: 12px;
+      padding: 48px 24px;
+    }
   } 
   

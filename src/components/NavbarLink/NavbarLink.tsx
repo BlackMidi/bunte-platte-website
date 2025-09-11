@@ -6,9 +6,10 @@ type NavbarLinkProps = {
   label: string;
   to: string;
   className?: string;
+  children?: React.ReactNode;
 };
 
-export const NavbarLink = ({ label, to, className }: NavbarLinkProps) => {
+export const NavbarLink = ({ label, to, className, children }: NavbarLinkProps) => {
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
 
     e.preventDefault();
@@ -32,8 +33,12 @@ export const NavbarLink = ({ label, to, className }: NavbarLinkProps) => {
 
   return (
     <a href={to} onClick={handleClick} className={`${styles.navbarLink} ${className || ''}`}>
-      <span className={styles.darkText}>{label}</span>
-      <span className={styles.invertedText}>{label}</span>
+      {children || (
+        <>
+          <span className={styles.darkText}>{label}</span>
+          <span className={styles.invertedText}>{label}</span>
+        </>
+      )}
     </a>
   );
 };

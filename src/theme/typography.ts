@@ -40,22 +40,6 @@ export const typography = {
     lineHeight: '28px',
     textAlign: 'left',
   },
-  labelUppercaseSemibold: {
-    fontFamily: 'Inter',
-    fontSize: '12px',
-    fontStyle: 'normal',
-    fontWeight: 600,
-    lineHeight: '18px',
-    textTransform: 'uppercase',
-  },
-  labelUppercaseMedium: {
-    fontFamily: 'Inter',
-    fontSize: '12px',
-    fontStyle: 'normal',
-    fontWeight: 500,
-    lineHeight: '18px',
-    textTransform: 'uppercase',
-  },
   labelMedium: {
     fontFamily: 'Inter',
     fontSize: '12px',
