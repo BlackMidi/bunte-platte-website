@@ -68,7 +68,7 @@ function Home() {
                 <p style={{fontSize: '20px', color: '#1F2A37', lineHeight: '28px', textAlign: 'left'}}>
                 We are always on the lookout for like-minded people who want to and can support our team or the festival. If you would like to take on active tasks or responsibility in the Bunte Platte e.V. or in the organization of the Klein und Haarig Festival, please contact us directly by e-mail. We look forward to every request. If you don't want to or can't help out, but still want to support us, you can do so with an annual payment in the form of a supporting membership. To do this, tick one of the available amounts on the following membership application form and send it to us completed and signed.
                 </p>
-                <List>
+                {/* <List>
                     <ListItem iconSrc="/placeholder.svg">
                     Benefit of joining A
                     </ListItem>
@@ -78,7 +78,7 @@ function Home() {
                     <ListItem iconSrc="/placeholder.svg">
                     Benefit of joining C
                     </ListItem>
-                </List>
+                </List> */}
                 <LinkButton href="https://kleinundhaarig.de/pdf/230109_Aufnahmeantrag_Foerdermitgliedschaft_BuntePlatte.pdf" label="Join Bunte Platte e.V." iconSrc='/arrow_right.svg'/>
             </Section>
 

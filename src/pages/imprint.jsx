@@ -15,7 +15,7 @@ function Imprint() {
                 Türkenstraße 21
                 80799 München <br></br>
                 E-Mail: info@bunte-platte.de <br></br>
-                Vertreten durch: Luca Prohl und Mareike Klaus (Vorstand) <br></br><br></br>
+                Vertreten durch: Luca Prohl und Simon Christans (Vorstand) <br></br><br></br>
 
                 EINGETRAGENER VEREIN <br></br>
                 Vereinsregisternummer: VR 208738 <br></br>
