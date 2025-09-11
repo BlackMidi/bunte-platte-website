@@ -14,7 +14,7 @@ export const Navbar = () => {
       <div className={styles.contentLeft}>
         <div className={styles.navigation}>
           {/* This link scrolls to the top of the page */}
-          <NavbarLink to="#" label="Bunte Platte e.V."/>
+          <NavbarLink to="/home" label="Bunte Platte e.V."/>
         </div>
       </div>
       <div className={styles.contentRight}>

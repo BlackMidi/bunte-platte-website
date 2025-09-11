@@ -19,7 +19,7 @@ function Home() {
 
              <Section id="about" title="Who we are">
                 <p style={{fontSize: '20px', color: '#1F2A37', lineHeight: '28px', textAlign: 'left'}}>
-                Bunte Platte e.V. is a ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                We are a non-profit organization based in Munich. We have been organizing the Klein und Haarig Festival for 7 years now. Initially with 40 guests, during Corona as a musical tent camp and since 2020 as a registered association with now 14 members and 350 guests. We have made it our mission to make electronic music culture tangible in all its colorful, wonderfully weird and progressive facets.
                 </p>
                 <Accordion>
                     <AccordionItem title="More infos on XYZ">
@@ -41,31 +41,32 @@ function Home() {
             </Section>
 
             <Section id="projects" title="Our Projects">
+                <LinkButton href="https://kleinundhaarig.de" label="Klein und Haarig Festival Website" iconSrc='/arrow_right.svg'/>
                 <ProjectCardGroup>
                     <ProjectCard 
-                        title="Project Name"
-                        imageUrl="/image_placeholder.png"
-                        projectUrl="https://kleinundhaarig.de"
-                        iconSrc="/arrow_right.svg"
+                        title="KuH 25 Poster"
+                        imageUrl="/project-1.jpg"
+                        projectUrl=""
+                        iconSrc=""
                     />
                     <ProjectCard 
-                        title="Project Name"
-                        imageUrl="/image_placeholder.png"
-                        projectUrl="https://kleinundhaarig.de"
-                        iconSrc="/arrow_right.svg"
+                        title="KuH 24 Poster"
+                        imageUrl="/project-2.png"
+                        projectUrl=""
+                        iconSrc=""
                     />
                     <ProjectCard 
-                        title="Project Name"
-                        imageUrl="/image_placeholder.png"
-                        projectUrl="https://kleinundhaarig.de"
-                        iconSrc="/arrow_right.svg"
+                        title="KuH 23 Poster"
+                        imageUrl="/project-3.jpg"
+                        projectUrl=""
+                        iconSrc=""
                     />
                 </ProjectCardGroup>
             </Section>
 
             <Section id="join" title="Join us">
                 <p style={{fontSize: '20px', color: '#1F2A37', lineHeight: '28px', textAlign: 'left'}}>
-                Join Bunte Platte e.V. for magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                We are always on the lookout for like-minded people who want to and can support our team or the festival. If you would like to take on active tasks or responsibility in the Bunte Platte e.V. or in the organization of the Klein und Haarig Festival, please contact us directly by e-mail. We look forward to every request. If you don't want to or can't help out, but still want to support us, you can do so with an annual payment in the form of a supporting membership. To do this, tick one of the available amounts on the following membership application form and send it to us completed and signed.
                 </p>
                 <List>
                     <ListItem iconSrc="/placeholder.svg">
@@ -90,15 +91,15 @@ function Home() {
             <ImageGroup>
                     <ImageRow 
                     variant="single" 
-                    images={['/image_placeholder.png']} 
+                    images={['/archive-1.JPG']} 
                     />
                     <ImageRow 
                     variant="double" 
-                    images={['/image_placeholder.png', '/image_placeholder.png']} 
+                    images={['/archive-2.JPG', '/archive-3.JPG']} 
                     />
                     <ImageRow 
                     variant="single" 
-                    images={['/image_placeholder.png']} 
+                    images={['/archive-4.JPG']} 
                     />
             </ImageGroup>
 
